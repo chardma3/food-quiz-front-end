@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body class="flex">
+    <div class="wrapper">
+      <div class="quiz-container">
+        <div class="quiz-head">
+          <h1 class="quiz-title">Food Quiz</h1>
+        </div>
+        <div class="quiz-body">
+          <div id="selected-level" class="current-level">Level 1</div>
+          <h2 class="quiz-question" id="question">
+            What does the acronym HTTP stand for?<br />
+            <!--      <span id="selected-level" class="current-level">Level 1</span> -->
+          </h2>
+          <ul class="quiz-options">
+            <li id="option1">1. Happy Text Transfer Parameters</li>
+            <li id="option2">2. Hyper Text Transmission Parameters</li>
+            <li id="option3">3. Hoopla Text Transfer Parameters</li>
+          </ul>
+          <!---result here-->
+          <div id="result" class="msg fade-out"></div>
+        </div>
+        <div class="quiz-foot">
+          <div class="box" aria-haspopup="true">
+            <button id="btn-dropdown" class="btn-dropdown">
+              Choose Levels
+            </button>
+            <nav id="nav-dropdown" class="nav-dropdown">
+              <ul>
+                <li><a data-level="1" class="level">Level 1</a></li>
+                <li><a data-level="2" class="level">Level 2</a></li>
+                <li><a data-level="3" class="level">Level 3</a></li>
+                <li><a data-level="4" class="level">Level 4</a></li>
+                <li><a data-level="5" class="level">Level 5</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="quiz-score flex">
+            <span id="correct-score"> Score: 0</span>
+          </div>
+          <button type="button" id="restart">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
