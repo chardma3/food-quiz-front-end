@@ -19,7 +19,7 @@ let randomQuestion;
 
 // functions
 async function loadQuestion() {
-  const APIUrl = "https://food-quiz-api-production.up.railway.app/questions/";
+  const APIUrl = "https://food-quiz-api.onrender.com/questions/";
   const result = await fetch(APIUrl);
   const data = await result.json();
   questions = data;
