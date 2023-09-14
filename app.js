@@ -23,7 +23,7 @@ async function loadQuestion() {
   const result = await fetch(APIUrl);
   const data = await result.json();
   questions = data;
-  console.log(questions);
+
   // Filter questions based on selected level
   filteredQuestions = questions.filter(
     (question) => question.level === selectedLevel
